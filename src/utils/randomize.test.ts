@@ -1,11 +1,12 @@
+import { vi } from "vitest";
 import { randomize } from "./randomize";
 
 beforeEach(() => {
-  jest.spyOn(global.Math, "random").mockReturnValue(0.123456789);
+  vi.spyOn(global.Math, "random").mockReturnValue(0.123456789);
 });
 
 afterEach(() => {
-  jest.spyOn(global.Math, "random").mockReset();
+  vi.spyOn(global.Math, "random").mockRestore();
 });
 
 describe("randomize", () => {

@@ -89,13 +89,13 @@ export const PokemonTypeColors = {
 };
 
 export const importImages = (image: string, filetype?: string) => {
-  return `${process.env.PUBLIC_URL}/assets/images/${image}.${
+  return `${import.meta.env.BASE_URL}assets/images/${image}.${
     filetype || "png"
   }`;
 };
 
 export const importPokemonImage = (image: string) => {
-  return `${process.env.PUBLIC_URL}/assets/pokemons/${image}.png`;
+  return `${import.meta.env.BASE_URL}assets/pokemons/${image}.png`;
 };
 
 export const PokemonTypePlaceholders = {

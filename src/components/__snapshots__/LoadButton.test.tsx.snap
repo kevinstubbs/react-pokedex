@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`renders LoadButton successfully 1`] = `
 <div>
@@ -9,10 +9,8 @@ exports[`renders LoadButton successfully 1`] = `
       class="absolute inset-y-0 left-0 flex items-center pl-4"
     >
       <svg
-        class="w-6 h-6 fill-current"
-      >
-        pokeball.svg
-      </svg>
+        data-testid="pokeball-icon"
+      />
     </div>
     <span
       class="pl-8"

@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as PokeballIcon } from "../svg/pokeball.svg";
+import PokeballIcon from "../svg/pokeball.svg?react";
 
 type Props = {
   clickHandler: () => void;
